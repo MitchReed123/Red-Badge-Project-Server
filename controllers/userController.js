@@ -24,6 +24,21 @@ router.post("/signup", (req, res) => {
   );
 });
 
+router.post("/AdminSignUp", (req, res) => {
+  User.create({
+    username: req.body.username,
+    password: bcrypt.hashSync(req.body.password, 10),
+    userRole: "user",
+  }).then(
+    (createSuccess = (user) => {
+      res.json({
+        user: user,
+        message: "user created from admin",
+      });
+    })((createError = (err) => res.send(500, err)))
+  );
+});
+
 router.post("/login", (req, res) => {
   User.findOne({
     where: {
@@ -77,6 +92,23 @@ router.delete("/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
+  })
+    .then((user) =>
+      res.status(200).json({
+        user: user,
+      })
+    )
+    .catch((err) =>
+      res.status(500).json({
+        error: err,
+      })
+    );
+});
+
+router.get("/", (req, res) => {
+  console.log("USER", req.user);
+  User.findAll({
+    where: {},
   })
     .then((user) =>
       res.status(200).json({
