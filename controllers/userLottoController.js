@@ -28,7 +28,6 @@ router.post("/", (req, res) => {
     lottoPot: req.body.lottoPot,
     location: req.body.location,
     owner_id: req.user.id,
-    userId: req.user.id,
   };
   Lottery.create(lotteryFromRequest)
     .then((lottery) =>

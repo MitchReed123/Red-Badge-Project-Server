@@ -8,10 +8,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    destination_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
   });
   return Destination;
 };
