@@ -25,6 +25,7 @@ router.post("/", (req, res) => {
     lottoAddress: req.body.lottoAddress,
     // lottoId: this.destination_id,
   };
+
   Destinations.create(destinationFromRequest)
     .then((destination) =>
       res.status(200).json({

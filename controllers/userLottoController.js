@@ -2,11 +2,12 @@ const router = require("express").Router();
 const Lottery = require("../db").import("../models/userLotto");
 
 router.get("/", (req, res) => {
-  console.log("USER", req.user);
+  // console.log("USER", req.user);
   Lottery.findAll({
     where: {
       owner_id: req.user.id,
     },
+    // include: "location",
   })
     .then((lotteries) =>
       res.status(200).json({
