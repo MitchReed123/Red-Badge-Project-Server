@@ -2,7 +2,7 @@
 module.exports = (sequelize, DataTypes) => {
   const Lotto = sequelize.define("lotto", {
     lottoNum: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     nameOfLotto: {
