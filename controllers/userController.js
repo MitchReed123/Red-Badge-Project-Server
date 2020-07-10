@@ -23,7 +23,7 @@ router.post("/signup", (req, res) => {
     (createError = (err) => res.send(500, err))
   );
 });
-
+//admin posts
 router.post("/AdminSignUp", (req, res) => {
   User.create({
     username: req.body.username,
@@ -38,7 +38,7 @@ router.post("/AdminSignUp", (req, res) => {
     })((createError = (err) => res.send(500, err)))
   );
 });
-
+//login info
 router.post("/login", (req, res) => {
   User.findOne({
     where: {
@@ -86,6 +86,23 @@ router.put("/:id", (req, res) => {
       })
     );
 });
+// router.get("/:username", (req, res) => {
+//   User.findOne({
+//     where: {
+//       username: req.params.username,
+//     },
+//   })
+//     .then((user) =>
+//       res.status(200).json({
+//         user: user,
+//       })
+//     )
+//     .catch((err) =>
+//       res.status(500).json({
+//         error: err,
+//       })
+//     );
+// });
 
 router.delete("/:id", (req, res) => {
   User.destroy({
