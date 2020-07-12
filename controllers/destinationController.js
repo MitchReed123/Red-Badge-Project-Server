@@ -4,9 +4,7 @@ const Destinations = require("../db").import("../models/destination");
 //getting all that was made
 router.get("/", (req, res) => {
   Destinations.findAll({
-    where: {
-      destination_id: req.user.id,
-    },
+    where: {},
   })
     .then((destinations) =>
       res.status(200).json({
@@ -25,9 +23,9 @@ router.post("/", (req, res) => {
   const destinationFromRequest = {
     lottoLocation: req.body.lottoLocation,
     lottoAddress: req.body.lottoAddress,
-    destination_id: req.user.id,
-    lottoId: req.user.id,
+    // lottoId: this.destination_id,
   };
+
   Destinations.create(destinationFromRequest)
     .then((destination) =>
       res.status(200).json({
