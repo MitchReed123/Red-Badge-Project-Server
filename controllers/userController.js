@@ -86,23 +86,6 @@ router.put("/:id", (req, res) => {
       })
     );
 });
-// router.get("/:username", (req, res) => {
-//   User.findOne({
-//     where: {
-//       username: req.params.username,
-//     },
-//   })
-//     .then((user) =>
-//       res.status(200).json({
-//         user: user,
-//       })
-//     )
-//     .catch((err) =>
-//       res.status(500).json({
-//         error: err,
-//       })
-//     );
-// });
 
 router.delete("/:id", (req, res) => {
   User.destroy({
@@ -137,6 +120,24 @@ router.get("/", (req, res) => {
         error: err,
       })
     );
+});
+
+router.get("/:id", (req, res) => {
+  User.findOne({
+    where: {
+      id: req.params.id,
+    },
+  })
+    .then((user) =>
+      res.status(200).json({
+        user: user,
+      })
+    )
+    .catch((err) => {
+      res.status(500).json({
+        error: err,
+      });
+    });
 });
 
 module.exports = router;
