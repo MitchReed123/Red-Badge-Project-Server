@@ -19,7 +19,7 @@ router.get("/", (req, res) => {
       })
     );
 });
-
+//heroku push
 //post
 router.post("/", (req, res) => {
   const lotteryFromRequest = {
