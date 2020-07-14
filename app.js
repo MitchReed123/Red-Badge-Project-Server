@@ -13,9 +13,10 @@ app.use(express.json());
 app.use(require("./middleware/headers"));
 
 app.use("/user", user);
+app.use("/destination", Destination);
 app.use(require("./middleware/validate-session"));
 app.use("/lotto", userLotto);
-app.use("/destination", Destination);
+// app.use("/destination", Destination);
 
 app.listen(process.env.PORT, () =>
   console.log(`app is listening on ${process.env.PORT}`)

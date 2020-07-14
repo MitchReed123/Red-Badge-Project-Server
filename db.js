@@ -28,7 +28,7 @@ User = sequelize.import("./models/user");
 Destinations = sequelize.import("./models/destination");
 userLotto = sequelize.import("./models/userLotto");
 
-//
+// //
 
 User.hasMany(userLotto);
 userLotto.belongsTo(User);
