@@ -30,7 +30,7 @@ App Endpoints
         PUT/:id         => Updates a specific item in the DB by ID
         DELETE/:id      => Deletes a specific item in the DB by ID
 
-  Destinations: ~/destinations
+  Destinations: ~/destination
   
         GET/            => Shows all the destinations available to on DB
         POST/           => Allows a user to post a new location that the Admin then can Delete/Update
