@@ -1,6 +1,7 @@
 The Daily Lotto
   
-  Description:  
+The app for lottery lovers! The Daily Lotto will generate a set of 6 random numbers to be used on your next lottery ticket (Mega Millions, Powerball, Hoosier Lottery) then you can store those numbers and ticket info in your account. 
+
 
 Created by Team 4:
   - Mitchell -- github.com/MitchReed123
@@ -9,6 +10,18 @@ Created by Team 4:
   
   
 App Features
+  
+  Users:
+    - Create a personalized user account
+    - Reset username/password
+    - Generate set of 6 random numbers to be used when purchasing a lottery ticket
+    - Log generated numbers and lottery ticket info in account 
+    - Update and delete logged info
+    - Search places to buy lottery tickets in central Indianapolis on location menu or Google Maps
+    - Add a lottery location to menu if not listed
+    
+  Admins:
+    - Create, update or delete Daily Lotto users and lottery locations   
 
 
 App Endpoints
