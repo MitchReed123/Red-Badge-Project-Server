@@ -19,7 +19,7 @@ App Endpoints
         POST /AdminSignUp   => Admin account added
         POST /login         => Logs in a user
         GET /               => Gets all users for Admin
-        UPDATE/:id          => Admin & User can update the username, passworduserRole 
+        UPDATE/:id          => Admin & User can update user info
         DELETE/:id          => Admin & User can delete user profile
 
   Lottos: ~/lotto
