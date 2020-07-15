@@ -1,6 +1,6 @@
 # The Daily Lotto
   
-The app for lottery lovers! The Daily Lotto will generate a set of 6 random numbers to be used on your next lottery ticket (Mega Millions, Powerball, Hoosier Lottery) then you can store those numbers and ticket info in your account. 
+### The app for lottery lovers! The Daily Lotto will generate a set of 6 random numbers to be used on your next lottery ticket (Mega Millions, Powerball, Hoosier Lottery) then you can store those numbers and ticket info in your account. 
 
 
 ## Created by Team 4:
