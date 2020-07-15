@@ -3,9 +3,9 @@ The Daily Lotto
   Description:  
 
 Created by Team 4:
-  - Mitchell
-  - Mizue
-  - Brittany
+  - Mitchell -- github.com/MitchReed123
+  - Mizue -- github.com/mobara121
+  - Brittany -- github.com/bmagee2
   
   
 App Features
